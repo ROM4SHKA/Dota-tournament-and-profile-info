@@ -24,6 +24,14 @@ namespace KursachV2.Controllers
             }
         }
 
+        public GetTourInfo GetTourInfo
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public async Task<IActionResult> Tourinfo(string which)
         {
             if (User.Identity.IsAuthenticated)

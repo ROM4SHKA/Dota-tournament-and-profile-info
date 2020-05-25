@@ -31,6 +31,14 @@ namespace KursachV2.Controllers
             }
         }
 
+        public DotaProfileInfo DotaProfileInfo
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public async Task<IActionResult> MainPage()
         {
             if (User.Identity.IsAuthenticated)

@@ -25,13 +25,5 @@ namespace KursachV2.Models.Tournaments
         public string Name { get; set; }
         [JsonPropertyName("serie")]
         public Serie serie { get; set; }
-
-        public Tournament Tournament1
-        {
-            get => default;
-            set
-            {
-            }
-        }
     }
 }

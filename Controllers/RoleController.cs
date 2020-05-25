@@ -30,6 +30,14 @@ namespace KursachV2.Controllers
             }
         }
 
+        public ChangeRoleModel ChangeRoleModel
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public IActionResult RoleList()
         {
             return View(_roleManager.Roles.ToList());

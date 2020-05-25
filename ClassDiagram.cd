@@ -1,66 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="KursachV2.Program" Collapsed="true">
+  <Class Name="KursachV2.Program">
     <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.Startup" Collapsed="true">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+  <Class Name="KursachV2.Startup">
+    <Position X="1" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAgAAAAAAgAAACAAAAAA=</HashCode>
       <FileName>Startup.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyUserValidator" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.AccountController">
-    <Position X="16" Y="0.5" Width="1.5" />
+    <Position X="5" Y="7.25" Width="1.5" />
+    <AssociationLine Name="LoginModel" Type="KursachV2.ViewModel.LoginModel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="8.14" />
+        <Point X="4.625" Y="8.14" />
+        <Point X="4.625" Y="10.848" />
+        <Point X="5.479" Y="10.848" Type="JumpStart" />
+        <Point X="5.646" Y="10.848" Type="JumpEnd" />
+        <Point X="5.875" Y="10.848" />
+        <Point X="5.875" Y="14.19" />
+        <Point X="7.312" Y="14.19" />
+        <Point X="7.312" Y="13.815" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAABAABAAAAAQAAAABAAAIAAAABAIAAAAEQAAAAAAA=</HashCode>
+      <HashCode>CAABBAABABAAAQAAAABgAAIAAAABgIQAAAEQAAAAAAA=</HashCode>
       <FileName>Controllers\AccountController.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ResetPasswordModel" />
+      <Property Name="LoginModel" />
+      <Property Name="EmailService" />
+      <Property Name="User" />
+      <Property Name="ForgotPasswordModel" />
+      <Property Name="RegisterModel" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.MainController">
-    <Position X="9" Y="0.5" Width="1.5" />
+    <Position X="9" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAABAAAQAAAACAAAAAAAAAAAAAAAAAAAAAQAAAAAAE=</HashCode>
       <FileName>Controllers\MainController.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CommunityPlayer" />
+      <Property Name="DotaProfileInfo" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.RoleController">
-    <Position X="14.25" Y="0.5" Width="1.5" />
+    <Position X="16.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACABAAAAAAAAAAAAAAAACAgAAEAAEACAAAAAAABAAA=</HashCode>
+      <HashCode>AACABAAAAAAAAAAAAAAAECAgAAEAAEACAAAAAAABAAA=</HashCode>
       <FileName>Controllers\RoleController.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="CreateRoleModel" />
+      <Property Name="ChangeRoleModel" />
     </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.TeamsController">
-    <Position X="12.5" Y="0.5" Width="1.5" />
+    <Position X="12.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAIAAAAABAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAIAAAAABEAAAAAAAAAA=</HashCode>
       <FileName>Controllers\TeamsController.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Team" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.TournamentsController">
-    <Position X="17.75" Y="0.5" Width="1.5" />
+    <Position X="18" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="Microsoft.AspNetCore.Mvc.Controller" FixedToPoint="true">
+      <Path>
+        <Point X="13" Y="1.441" />
+        <Point X="13" Y="3.625" />
+        <Point X="18.812" Y="3.625" />
+        <Point X="18.812" Y="3.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>CAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CgAAAAAAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Controllers\TournamentsController.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tournament" />
+      <Property Name="GetTourInfo" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.UsersController">
-    <Position X="10.75" Y="0.5" Width="1.5" />
+    <Position X="10.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACABAAAAAAAgAAAAAAAAAAAAAEAAEACAAAAAAAAAAA=</HashCode>
+      <HashCode>AACABAAAAAAAgAAAAAAAAEAAAgEAAEACCAAAAAAAAAA=</HashCode>
       <FileName>Controllers\UsersController.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ChangePasswordModel" />
+      <Property Name="CreateModel" />
+      <Property Name="EditModel" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Models.Players.CommunityPlayer">
-    <Position X="1.25" Y="6.5" Width="1.5" />
+    <Position X="9.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAEBAgAACAAAAAAAA=</HashCode>
       <FileName>Models\Players\CommunityPlayer.cs</FileName>
@@ -70,28 +119,28 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Models.Players.Profile">
-    <Position X="1.5" Y="10" Width="1.5" />
+    <Position X="9.25" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAJAIAAAAAAAAAAAEAAAAAAIAAAAA=</HashCode>
       <FileName>Models\Players\Profile.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.Models.Players.Stats" Collapsed="true">
-    <Position X="2.25" Y="4.5" Width="1.5" />
+  <Class Name="KursachV2.Models.Players.Stats">
+    <Position X="6.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAACAAAAAAAA=</HashCode>
       <FileName>Models\Players\Stats.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.Models.Team_Player.Player">
-    <Position X="10.5" Y="8.5" Width="1.5" />
+    <Position X="12.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAkCAAAAAAAAAEAAAAAAAAAgAAAEAAIAAAAAACAg=</HashCode>
       <FileName>Models\Team_Player\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.Models.Team_Player.Team">
-    <Position X="8" Y="7.5" Width="1.5" />
+    <Position X="12.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAIAAARAAAggAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Team_Player\Team.cs</FileName>
@@ -100,22 +149,22 @@
       <Property Name="Players" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="KursachV2.Models.Tournaments.League" Collapsed="true">
-    <Position X="3.75" Y="11" Width="1.5" />
+  <Class Name="KursachV2.Models.Tournaments.League">
+    <Position X="20.5" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAgAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Models\Tournaments\League.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.Models.Tournaments.Serie">
-    <Position X="6" Y="7.75" Width="1.5" />
+    <Position X="18.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAQAAAMIAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Tournaments\Serie.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.Models.Tournaments.Tournament">
-    <Position X="3.75" Y="6.75" Width="1.5" />
+    <Position X="20.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIACCQAAAAAAAAIAAABAAAQAAAAAAAAAAACAAAAAAAA=</HashCode>
       <FileName>Models\Tournaments\Tournament.cs</FileName>
@@ -126,29 +175,29 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Models.MyContext">
-    <Position X="5.75" Y="2.5" Width="1.5" />
+    <Position X="3" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\MyContext.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.Models.User" Collapsed="true">
-    <Position X="0.5" Y="3" Width="1.5" />
+    <Position X="7.25" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.Services.PlayerService.DotaProfileInfo" BaseTypeListCollapsed="true">
-    <Position X="12.75" Y="9.25" Width="1.5" />
+    <Position X="7" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\PlayerService\DotaProfileInfo.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="KursachV2.Services.TeamsService.GetTeamInfo" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14.75" Y="9.25" Width="1.5" />
+  <Class Name="KursachV2.Services.TeamsService.GetTeamInfo" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Services\TeamsService\GetTeamInfo.cs</FileName>
@@ -156,15 +205,15 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="KursachV2.Services.TourService.GetTourInfo" BaseTypeListCollapsed="true">
-    <Position X="16.75" Y="6" Width="1.5" />
+    <Position X="17.75" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\TourService\GetTourInfo.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Right" Position="0.175" Collapsed="true" />
   </Class>
-  <Class Name="KursachV2.Services.Validator.MyUserValidator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="6.25" Width="1.5" />
+  <Class Name="KursachV2.Services.Validator.MyUserValidator" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAAA=</HashCode>
       <FileName>Services\Validator\MyUserValidator.cs</FileName>
@@ -172,91 +221,96 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="KursachV2.Services.EmailService" Collapsed="true">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="8" Y="12.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>Services\EmailService.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.ViewModel.ChangePasswordModel" Collapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+  <Class Name="KursachV2.ViewModel.ChangePasswordModel">
+    <Position X="9.75" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAACAAAAAAABAAAAAAIEAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ViewModel\ChangePasswordModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.ViewModel.ChangeRoleModel" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+  <Class Name="KursachV2.ViewModel.ChangeRoleModel">
+    <Position X="14.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAEAgAAAAAAAgAAAAACAAAAAA=</HashCode>
       <FileName>ViewModel\ChangeRoleModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.ViewModel.CreateModel" Collapsed="true">
-    <Position X="0.5" Y="0.75" Width="1.5" />
+  <Class Name="KursachV2.ViewModel.CreateModel">
+    <Position X="10.5" Y="16" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAIAAAAAAAAAAIAAAAAACAAAAAAAAIAI=</HashCode>
       <FileName>ViewModel\CreateModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.ViewModel.CreateRoleModel" HideInheritanceLine="true">
-    <Position X="8.25" Y="4.75" Width="1.5" />
+    <Position X="16.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ViewModel\CreateRoleModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.ViewModel.EditModel" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+  <Class Name="KursachV2.ViewModel.EditModel">
+    <Position X="12.25" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAACAAAIAAAAAAAAAAIAAAAAAAAAAEABAAEAI=</HashCode>
       <FileName>ViewModel\EditModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.ViewModel.ForgotPasswordModel" Collapsed="true">
-    <Position X="5.75" Y="1.5" Width="1.5" />
+  <Class Name="KursachV2.ViewModel.ForgotPasswordModel">
+    <Position X="2" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ViewModel\ForgotPasswordModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="KursachV2.ViewModel.LoginModel" Collapsed="true">
-    <Position X="2.25" Y="2.5" Width="1.5" />
+  <Class Name="KursachV2.ViewModel.LoginModel">
+    <Position X="6.25" Y="11.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAIAAAAAACAAIAAAAgAAI=</HashCode>
       <FileName>ViewModel\LoginModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.ViewModel.RegisterModel" Collapsed="true">
-    <Position X="4" Y="3.5" Width="1.5" />
+    <Position X="7.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAIAAAAAAAAAAIAAAAAACAAAAAAAAIAI=</HashCode>
       <FileName>ViewModel\RegisterModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.ViewModel.ResetPasswordModel">
-    <Position X="6" Y="4" Width="1.5" />
+    <Position X="3.75" Y="12.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAgAAAAIAAAAAACAAAAAAAAIAI=</HashCode>
       <FileName>ViewModel\ResetPasswordModel.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Microsoft.AspNetCore.Mvc.Controller" Collapsed="true">
+    <Position X="12.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="KursachV2.Services.PlayerService.IPlayer">
-    <Position X="13" Y="6.5" Width="1.5" />
+    <Position X="15.5" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\PlayerService\IPlayer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="KursachV2.Services.TeamsService.ITeam">
-    <Position X="16.75" Y="8" Width="1.5" />
+    <Position X="20.25" Y="12.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Services\TeamsService\ITeam.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="KursachV2.Services.TourService.ITournament">
-    <Position X="14.75" Y="7.25" Width="1.5" />
+    <Position X="17.25" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\TourService\ITournament.cs</FileName>
