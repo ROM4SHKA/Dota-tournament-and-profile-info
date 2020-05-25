@@ -18,14 +18,6 @@ namespace KursachV2.Controllers
             _teamservice = teamservice;
         }
 
-        public Team Team
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public async Task<IActionResult> TeamsPage()
         {
             if (User.Identity.IsAuthenticated)

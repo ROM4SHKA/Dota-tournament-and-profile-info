@@ -8,8 +8,9 @@ using KursachV2.Models.Players;
 
 namespace KursachV2.Services.PlayerService
 {
-    public class DotaProfileInfo : IPlayer, TourService.ITournament
+    public class DotaProfileInfo : IPlayer
     {
+
         public async Task<CommunityPlayer> CPlayerInfo(int? id)
         {
             CommunityPlayer player = new CommunityPlayer();

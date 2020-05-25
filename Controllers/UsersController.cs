@@ -20,31 +20,6 @@ namespace KursachV2.Controllers
         {
             _userManager = userManager;
         }
-
-        public ChangePasswordModel ChangePasswordModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public CreateModel CreateModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public EditModel EditModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public IActionResult UserList() { return View(_userManager.Users.ToList()); }
        [HttpGet]
         public IActionResult Create(CreateModel model, string returnUrl = null)

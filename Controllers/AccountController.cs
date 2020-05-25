@@ -20,54 +20,6 @@ namespace KursachV2.Controllers
             _userManager = userManager;          
         }
 
-        public ResetPasswordModel ResetPasswordModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public LoginModel LoginModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public EmailService EmailService
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public User User
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public ForgotPasswordModel ForgotPasswordModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public RegisterModel RegisterModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         [HttpGet]
         public IActionResult Register(RegisterModel model,string returnUrl = null)
         {

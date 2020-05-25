@@ -67,12 +67,18 @@
   </Class>
   <Class Name="KursachV2.Controllers.TeamsController">
     <Position X="12.75" Y="4" Width="1.5" />
+    <AssociationLine Name="GetTeamInfo" Type="KursachV2.Services.TeamsService.GetTeamInfo">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.484" Y="-1.471" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAIAAAAABEAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAEIAAAAABEAAAAAAAAAA=</HashCode>
       <FileName>Controllers\TeamsController.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Team" />
+      <Property Name="GetTeamInfo" />
     </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.TournamentsController">
@@ -124,7 +130,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="KursachV2.Models.Players.Stats">
-    <Position X="6.25" Y="3.75" Width="1.5" />
+    <Position X="6.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAACAAAAAAAA=</HashCode>
       <FileName>Models\Players\Stats.cs</FileName>
@@ -189,18 +195,21 @@
   <Class Name="KursachV2.Services.PlayerService.DotaProfileInfo" BaseTypeListCollapsed="true">
     <Position X="7" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABAAACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\PlayerService\DotaProfileInfo.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <ShowAsAssociation>
+      <Property Name="Stats" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="KursachV2.Services.TeamsService.GetTeamInfo" BaseTypeListCollapsed="true">
-    <Position X="14.25" Y="6.25" Width="1.5" />
+    <Position X="14.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Services\TeamsService\GetTeamInfo.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="KursachV2.Services.TourService.GetTourInfo" BaseTypeListCollapsed="true">
     <Position X="17.75" Y="9.25" Width="1.5" />
@@ -308,7 +317,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="KursachV2.Services.TourService.ITournament">
-    <Position X="17.25" Y="13.25" Width="1.5" />
+    <Position X="18.5" Y="12.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\TourService\ITournament.cs</FileName>

@@ -23,21 +23,6 @@ namespace KursachV2.Controllers
             _userManager = userManager;
         }
 
-        public CommunityPlayer CommunityPlayer
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public DotaProfileInfo DotaProfileInfo
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
         public async Task<IActionResult> MainPage()
         {

@@ -16,21 +16,6 @@ namespace KursachV2.Controllers
             _tournamentservice = tournamentservice;
         }
 
-        public Tournament Tournament
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public GetTourInfo GetTourInfo
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
         public async Task<IActionResult> Tourinfo(string which)
         {

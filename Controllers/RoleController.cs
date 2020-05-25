@@ -21,23 +21,6 @@ namespace KursachV2.Controllers
             _roleManager = roleMandger;
             _userManager = userManager;
         }
-
-        public CreateRoleModel CreateRoleModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public ChangeRoleModel ChangeRoleModel
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public IActionResult RoleList()
         {
             return View(_roleManager.Roles.ToList());
