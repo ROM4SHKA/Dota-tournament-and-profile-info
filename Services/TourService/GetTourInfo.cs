@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace KursachV2.Services.TourService
 {
-    public class   GetTourInfo : ITournament
+    public class GetTourInfo : ITournament
     {
 
         public async Task<List<Tournament>> GetPastTour()

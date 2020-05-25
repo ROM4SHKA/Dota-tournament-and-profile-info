@@ -24,10 +24,8 @@
         <Point X="5" Y="8.14" />
         <Point X="4.625" Y="8.14" />
         <Point X="4.625" Y="10.848" />
-        <Point X="5.479" Y="10.848" Type="JumpStart" />
-        <Point X="5.646" Y="10.848" Type="JumpEnd" />
-        <Point X="5.875" Y="10.848" />
-        <Point X="5.875" Y="14.19" />
+        <Point X="5.563" Y="10.848" />
+        <Point X="5.563" Y="14.19" />
         <Point X="7.312" Y="14.19" />
         <Point X="7.312" Y="13.815" />
       </Path>
@@ -175,7 +173,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Models.MyContext">
-    <Position X="3" Y="5.5" Width="1.5" />
+    <Position X="3" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\MyContext.cs</FileName>
@@ -210,7 +208,7 @@
       <HashCode>AIQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\TourService\GetTourInfo.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Orientation="Right" Position="0.175" Collapsed="true" />
+    <Lollipop Orientation="Right" Position="0.175" />
   </Class>
   <Class Name="KursachV2.Services.Validator.MyUserValidator" BaseTypeListCollapsed="true">
     <Position X="1.25" Y="8.25" Width="1.5" />
