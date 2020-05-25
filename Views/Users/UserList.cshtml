@@ -1,0 +1,34 @@
+﻿@model IEnumerable<KursachV2.Models.User>
+@{
+    ViewData["Title"] = "Список користувачів";
+}
+
+<h2>Список користувачів</h2>
+<a asp-action="Create">Створити користувача</a>
+<p></p>
+<table>
+    <tr>
+        <th>Email</th>
+        <th>Ім'я</th>
+        <th>AccountId32</th>
+        <th>Пароль</th>
+        <th></th>
+    </tr>
+@foreach( var i in Model)
+{
+    <tr> 
+        <td>@i.Email</td>
+        <td>@i.UserName</td>
+        <td>@i.Account_id</td>
+
+        <td>
+            <form asp-action="Delete" asp-route-id="@i.Id" method="post">
+                <a  asp-controller ="Users"asp-action="Edit" asp-route-id="@i.Id">Редагувати</a>
+                <a asp-controller="Users" asp-action="ChangePassword" asp-route-id="@i.Id">Змінити пароль</a>
+                <input type="submit" value="Видалити"/>
+            </form>
+        </td>
+    </tr>
+}
+</table>
+

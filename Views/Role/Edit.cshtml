@@ -1,0 +1,31 @@
+﻿
+@model KursachV2.ViewModel.ChangeRoleModel
+@{ Layout = null;}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Вхід в аккаунт</title>
+    <link rel="stylesheet" href="~/css/2.css" />
+</head>
+<body>
+    <form class="ResetPasswordform" asp-action="Edit" method="post">
+        <h2>Зміна ролей @Model.UserEmail</h2>
+
+        <input type="hidden" name="userId" value="@Model.UserId" />
+        <div class="form-group">
+            @foreach (var i in Model.AllRoles)
+            {
+            <div class="remember">
+                <input type="checkbox" name="roles" value="@i.Name"
+                       @(Model.UserRoles.Contains(i.Name) ? "checked=\"checked\"" : "") />@i.Name <br />
+                </div>
+            }
+        </div>
+       <center><button type="submit">Зберегти</button></center>
+        <p></p>
+        <div class="links">
+            <center><a asp-action="UserList" asp-controller="Role">Список кристувачів</a></center>
+        </div>
+    </form>
+    </body>
+</html> 

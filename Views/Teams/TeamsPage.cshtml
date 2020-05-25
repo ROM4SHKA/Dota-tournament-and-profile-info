@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Team>
+@{
+    ViewData["Title"] = "TeamsPage";
+}
+
+<nav  class="team-comp">
+    <div class="teamlist">
+        @foreach (var i in Model)
+        {<a class="link" href="https://localhost:44307/Teams/TeamInfo?id=@i.Id">
+              <ul class="hr">
+                  <li><img src="@i.ImgUrl" width="100" /></li>
+                  <li> @i.Name </li>                    
+              </ul>
+              <p>Список гравців: @foreach (var b in i.Players)
+              {              
+                  @(b.NickName+"/");
+               
+              }</p>
+          </a>
+         }
+    </div>
+    </nav>
+   
+

@@ -1,0 +1,61 @@
+﻿@model KursachV2.ViewModel.RegisterModel
+@{
+    Layout = null;
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="~/css/2.css" />
+</head>
+<body>
+
+    <form class="Registerform" method="post" asp-controller="Account" asp-action="Register">
+        <center><h2 title="Форма реєстрації на сайті">Реєстрація</h2></center>
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="group">
+            <label asp-for="Email"></label>
+            <input  class ="cin" asp-for="Email" /><br />
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="Email"></span>
+            }
+        </div>
+        <div class="group">
+            <label>AccountId32</label>
+            <input  class ="cin"asp-for="Account_id" type="number" /><br />
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="Account_id"></span>
+            }
+        </div>
+        <div class="group">
+            <label asp-for="Password" value="Пароль"></label>
+            <input   class ="cin" asp-for="Password" type="password" /><br />
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="Password"></span>
+            }
+        </div>
+        <div class="group">
+            <label asp-for="ConfirmPassword" value="Підтвердження паролю"></label>
+            <input  class ="cin" asp-for="ConfirmPassword" type="password" /><br />
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+            }
+        </div>
+        <br />
+        <div>
+            <center><button type="submit">Реєстрація</button></center>
+        </div>
+        <p></p>
+        <div class="links">
+        <center><a asp-action="Login" asp-controller="Account">Вхід</a></center>
+        </div>
+    </form>
+
+</body>
+</html>
+
+

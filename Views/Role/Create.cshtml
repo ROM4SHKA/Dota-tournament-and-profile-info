@@ -1,0 +1,28 @@
+﻿@model CreateRoleModel;
+@{ Layout = null;}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Створення ролей</title>
+    <link rel="stylesheet" href="~/css/2.css" />
+</head>
+<body>
+    <center><h2>Створення ролі</h2></center>
+    @if (Model.Gone > 0)
+    {
+    <div asp-validation-summary="ModelOnly"></div>
+    }
+    <form asp-controller="Role" asp-action="Create" method="post">
+        <div class="group">
+            <label >Нова роль</label><br />
+            <input class="cin" asp-for="Name" />
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="Name"></span>
+            }
+        </div>
+        <center><button type="submit">Додати</button></center>
+
+    </form>
+</body>
+</html>

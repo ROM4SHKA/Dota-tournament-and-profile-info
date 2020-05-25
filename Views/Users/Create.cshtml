@@ -1,0 +1,59 @@
+﻿@model KursachV2.ViewModel.CreateModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Додавання користувача";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Створення користувача</title>
+    <link rel="stylesheet" href="~/css/2.css" />
+</head>
+<body>
+    <form class="Registerform" method="post" asp-action="Create" asp-controller="Users">
+        <center><h2>Створення користувача</h2></center>
+        @if (Model.Gone > 0)
+        {
+        <div asp-validation-summary="ModelOnly"></div>
+        }
+        <div class="group">
+            <label type="text " asp-for="Email"></label><br />
+            <input class="cin"  asp-for="Email" /><br />
+            @if (Model.Gone > 0)
+            {
+            <span class="text-danger" asp-validation-for="Email"></span>
+            }
+        </div>       
+        <div class="group">
+            <label>AccountId32</label><br />
+            <input class="cin" type="number" asp-for="Account_id" /><br />
+            @if (Model.Gone > 0)
+            {
+            <span class="text-danger" asp-validation-for="Account_id"></span>
+            }
+        </div>
+        <div class="group">
+            <label>Пароль</label><br />
+            <input class="cin" type="password" asp-for="Password" /><br />
+            @if (Model.Gone > 0)
+            {       
+                <span class="text-danger" asp-validation-for="Password"></span>
+            }
+        </div>
+        <div class="group">
+            <label>Підтвердження паролю</label>
+            <input class="cin" asp-for="ConfirmPassword" /><br/>
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+            }
+        </div>
+        <div>
+            <center><button type="submit">Додати</button></center>
+        </div>
+        <div class="links">
+            <center><a asp-action="UserList" asp-controller="Users">Список користувачів</a></center>
+        </div>
+    </form>
+</body>
+</html>

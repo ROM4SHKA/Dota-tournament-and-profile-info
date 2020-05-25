@@ -1,0 +1,18 @@
+﻿@model IEnumerable<KursachV2.Models.User>
+@{
+    
+    ViewData["Title"] = "Список користувачів";
+}
+
+<h2>Cписок коритсувачів</h2>
+<table>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td>@i.Email</td>
+            <td>
+                <a asp-action="Edit" asp-route-userid="@i.Id">Права доступу</a>
+            </td>
+        </tr>
+    }
+</table>

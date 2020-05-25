@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Tournament>
+@{ 
+    ViewData["Title"] = "Турніри";
+}
+<table>
+    <tr>
+        <th>Ліга</th>
+        <th>Cерія</th>
+        <th>Початок</th>
+        <th>Завершення</th>
+        <th>Призові</th>
+        <th>Посилання на турнір</th>
+    </tr>
+    @foreach(var i in Model)
+    {
+        <tr>
+            <td>
+                @i.League.Name
+            </td>
+            <td>
+                @if (i.serie.Name == null||i.serie.Name.Length==0) { i.serie.Name = "-"; }
+                @i.serie.Name
+            </td>
+            <td>
+                @if (i.serie.Begin_at == null) { i.serie.End_at = "N/I"; }
+                @i.serie.Begin_at
+            </td>
+            <td>
+                @if(i.serie.End_at == null) { i.serie.End_at = "N/I"; }
+                @i.serie.End_at
+            </td>
+            <td>
+                @if (i.PrizePool == null) { i.PrizePool = "N/I"; }
+                @i.PrizePool
+            </td>
+            <td>
+                @if(i.League.Url!=null&&i.League.Url.Length!=0)
+                {
+                <p><a href="@i.League.Url">Посилання</a></p>
+                }
+                else{ <p>Посилання</p> }
+            </td>
+        </tr>
+    }
+
+</table>

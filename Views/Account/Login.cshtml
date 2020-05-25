@@ -1,0 +1,51 @@
+﻿   @model KursachV2.ViewModel.LoginModel
+@{ Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Вхід в аккаунт</title>
+    <link rel="stylesheet" href ="~/css/2.css" />
+</head>
+<body>
+    <div>
+        <form class="Loginform" method="post" asp-area="" asp-controller="Account" asp-action="Login" asp-antiforgery="true">
+            <center><h2>Вхід</h2></center>
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <div class="group">
+                <label asp-for="Email"></label><br />
+                <input  class ="cin" asp-for="Email" value="@Model.Email" /><br />
+                @if (Model.Gone > 0)
+                {
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                }
+            </div>
+            <div class="group">
+                <label>Пароль</label><br />
+                <input  class ="cin" asp-for="Password" /><br />
+                @if (Model.Gone > 0)
+                {
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                }
+            </div>
+
+            <div class="remember">
+                <label asp-for="RememberMe">Запам'ятати</label><br />
+                <input asp-for="RememberMe" />
+            </div>
+            <div>
+                <center><button type="submit">Вхід</button></center>
+            </div>
+            <br />
+            <div class="links">
+                <center><a asp-controller="Account" asp-action="Register">Реєстрація</a></center>
+            </div>
+            <div class="links">
+                <center><a asp-controller="Account" asp-action="ForgotPassword">Забули пароль?</a></center>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿@model KursachV2.ViewModel.EditModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Редагування користувачів";
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Редагування користувача</title>
+    <link rel="stylesheet" href="~/css/2.css" />
+</head>
+<body>
+    <form class="Registerform"  method="post" asp-controller="Users" asp-action="Edit">
+        <center><h2>Редагування корутувача</h2></center>
+        @if (Model.Gone > 0)
+        {<div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        }
+        <div>
+            <input type="hidden" asp-for="Id" />
+        </div>
+        <div class="group">
+            <p>Поточний Email: @Model.OldEmail</p>
+            <label asp-for="Email"></label><br />
+            <input class="cin" type="text" asp-for="Email" />
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="Email"></span>
+            }
+        </div>
+        <div class="group">
+            <p>Поточний AccountId32: @Model.OldAccount_id</p>
+            <label>AccountId32</label><br />
+            <input class="cin" type="number" asp-for="Account_id" />
+            @if (Model.Gone > 0)
+            {
+                <span class="text-danger" asp-validation-for="Account_id"></span>
+            }
+        </div>
+        <div>
+            <center><button type="submit">Зберегти</button></center>
+        </div>
+        <div class="links">
+            <center><a asp-action="UserList" asp-controller="Users"></a>Список користувачів</center>
+        </div>
+    </form>
+    </body>
+</html>

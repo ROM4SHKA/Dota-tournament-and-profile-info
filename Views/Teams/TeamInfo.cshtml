@@ -1,0 +1,62 @@
+﻿@model KursachV2.Models.Team_Player.Team
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>TeamInfo</h1>
+
+<img src="@Model.ImgUrl" width="400" />
+<p>@Model.Name</p>
+@if (Model.Location != null)
+{
+    <p>Країна: @Model.Location </p>
+}
+@foreach (var i in Model.Players)
+{
+    <table>
+        <tr>
+            <td>
+                @if (i.ImgUrl == null)
+                {
+                    <img src="~/css/img/images.jpg" width="100" />
+                }
+                @if (i.ImgUrl != null)
+                {
+                    <img src="@i.ImgUrl" width="100" />
+                }
+            </td>
+            <td>
+                @if (i.NickName == null)
+                {
+                    <p>N/I</p>
+                }
+                else
+                { <p>@i.NickName</p>}
+            </td>
+        </tr>
+    </table>
+    @if (i.FirstName == null)
+    {
+        <p>N/I</p>
+    }
+    else
+    {<p>Пріщвище Ім'я: @i.FirstName  @i.LastName</p>}
+    @if (i.Birth == null)
+    {
+        <p>N/I</p>
+    }
+    else
+    {<p>День народження: @i.Birth</p>}
+    @if (i.Nationality == null)
+    {
+        <p>N/I</p>
+    }
+    else
+    {<p>Національність: @i.Nationality</p>}
+    @if (i.Role == null)
+    {
+        <p>N/I</p>
+    }
+    else
+    {<p>Позиція: @i.Role</p>}
+}

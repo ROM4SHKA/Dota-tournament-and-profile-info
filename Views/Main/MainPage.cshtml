@@ -1,0 +1,19 @@
+﻿@model KursachV2.Models.Players.CommunityPlayer
+@{
+    ViewData["Title"] = "Головна";
+}
+<div>
+<table>
+    <tr>
+        <td><img src="@Model.profile.ImageURL" width="150"/></td>
+        <td id="nick"><a href="@Model.profile.ProfileURL">@Model.profile.NickName</a></td>
+    </tr>
+</table>
+    <div class="info">
+    <p>Країна: @Model.profile.Location</p>
+    <p>SteamID32: @Model.profile.Accont_id</p>
+    <p>SteamID64: @Model.profile.SteamId64</p>
+<p>Поточний соло рейтинг: @Model.SoloCompetetiveRank MMR</p>
+<p>Перемог/поразок: @Model.Wins/@Model.Loses</p>
+ </div>
+ </div>

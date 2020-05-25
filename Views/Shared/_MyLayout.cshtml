@@ -1,0 +1,50 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>@ViewBag.Title</title>
+       <link rel="stylesheet" href="~/css/1.css">
+    </head>
+
+    <body>       
+            <header>
+                <div class="hello">
+                    <center><p>Цей ресурс присвячений комп'ютерній грі Dota 2.</p></center>
+                    <center>
+                        <p>На ньому ви можете знайти актуальну інформацію про турніри, команди. Відстежувати особисті результати.</p>
+                    </center>
+                    <center><p>Приємного користування.</p></center>
+                </div>
+                <div class="dws-menu">
+                    <ul>
+                        <li><a asp-area="" asp-controller="Main" asp-action="MainPage">Головна</a></li>
+                        <li>
+                            <a>Турніри</a>
+                            <ul>
+                                <li><a asp-area="" asp-controller="Tournaments" asp-action="Tourinfo" asp-route-which="all">Всі</a></li>
+                                <li><a asp-area="" asp-controller="Tournaments" asp-action="Tourinfo" asp-route-which="past">Минулі</a></li>
+                                <li><a asp-area="" asp-controller="Tournaments" asp-action="Tourinfo" asp-route-which="running">Йдуть зараз</a></li>
+                                <li><a asp-area="" asp-controller="Tournaments" asp-action="Tourinfo" asp-route-which="upcomming">Майбутні</a></li>
+                            </ul>
+                        </li>
+                        <li><a asp-area="" asp-controller="Teams" asp-action="TeamsPage">Команди</a></li>
+                        <li><a asp-area="" asp-controller="Account" asp-action="Login">Вихід</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div id="maindiv">
+                <div class="renderbody">
+                    @RenderBody()
+                </div>
+                <div>
+                    @if (User.IsInRole("admin"))
+                    {
+                        <a asp-controller="Users" asp-action="UserList">Список користувачів</a><br />
+                        <a asp-controller="Role" asp-action="UserList">Права доступу</a>
+                    }
+                </div>
+            </div>
+</body>
+</html>
+}

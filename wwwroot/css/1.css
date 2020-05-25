@@ -1,0 +1,119 @@
+﻿body {
+    font-family: Candara Light, sans-serif;
+    background-image: url(img/1img.jpg);
+    background-size: 100%;
+   
+}
+a {
+    text-decoration: none;
+    color: #221FFC !important;
+}
+#maindiv {
+    width:76%;
+    height:100%;
+    margin: 0 auto;
+    background-color:white;
+}
+header {
+    width: 76%;
+    margin: 0 auto; 
+    font-size: 24px;
+    margin-top:40px;
+}
+a:visited{
+    display:none;
+}
+.dws-menu {
+    background-color: #C4F07C;
+    margin:0;
+    padding: 0;
+    width:100%;
+    margin: auto;
+}
+.dws-menu ul,
+.dws-menu ol{
+    list-style:none;
+}
+    .dws-menu > ul {        
+        border-radius:5px;
+        display: flex;
+        justify-content: center;
+    }
+        .dws-menu > ul li a {
+            width:25%;
+            background-color: #C4F07C;
+            display: block;
+            padding: 15px 80px 15px 80px;
+            text-decoration: none;
+            color: #2A2A2C;
+            text-transform: uppercase;
+        }
+    .dws-menu > ul li{
+        position:relative;
+    }
+    .dws-menu  li a:hover {
+        box-shadow: 1px 5px 10px -5px black;
+        transition: all 0.5s ease;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .dws-menu li ul{
+        position:absolute;
+        min-width:150px;
+        display:none;
+    }
+    .dws-menu li > ul li {
+        border: 1px solid #3E3E42;
+    }
+        .dws-menu li > ul li a {
+            width:86%;
+            font-size: 15px;
+            padding: 10px;
+            text-transform: none;
+            background: #E4F7C7;
+        }
+        .dws-menu li:hover > ul{
+            display:block;
+        }
+        .team-comp ul ,
+        .team-comp ol
+        {
+            list-style :none;
+        }
+
+.hr li {
+    font-size:20px;
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+}
+.link {
+    text-decoration:none;
+}
+#maindiv button {
+    font-family: Candara Light, sans-serif;
+    cursor: pointer;
+    padding: 10px 50px;
+    height: 38px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #9D66A9;
+    border: none;
+    box-shadow: 1px 1px 2px #1F1E1E;
+    border-radius: 5px/5px;
+}
+.hello p {
+   color: #F72E3B;
+   font-weight:bolder;
+}
+#nick{
+    font-size:30px;
+}
+.info {
+    border-bottom: 1px solid #E88005;
+}
+.teamlist {
+    border-bottom: 1px solid #E88005;
+}
