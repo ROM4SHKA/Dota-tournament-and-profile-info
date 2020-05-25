@@ -24,14 +24,6 @@ namespace KursachV2
 
         public IConfiguration Configuration { get; }
 
-        public MyUserValidator MyUserValidator
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public void ConfigureServices(IServiceCollection services)           
         {
             services.AddTransient<IUserValidator<User>, MyUserValidator>();

@@ -2,7 +2,7 @@
 
 namespace KursachV2.ViewModel
 {
-    public class CreateRoleModel : Controllers.RoleController
+    public class CreateRoleModel 
     {
         [Required(ErrorMessage = "Поле 'Назва ролі' необхідне")]
 

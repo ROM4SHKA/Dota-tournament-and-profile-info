@@ -10,76 +10,37 @@
   <Class Name="KursachV2.Startup">
     <Position X="1" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAgAAAAAAgAAACAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
       <FileName>Startup.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="MyUserValidator" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.AccountController">
     <Position X="5" Y="7.25" Width="1.5" />
-    <AssociationLine Name="LoginModel" Type="KursachV2.ViewModel.LoginModel" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="5" Y="8.14" />
-        <Point X="4.625" Y="8.14" />
-        <Point X="4.625" Y="10.848" />
-        <Point X="5.563" Y="10.848" />
-        <Point X="5.563" Y="14.19" />
-        <Point X="7.312" Y="14.19" />
-        <Point X="7.312" Y="13.815" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>CAABBAABABAAAQAAAABgAAIAAAABgIQAAAEQAAAAAAA=</HashCode>
+      <HashCode>AAAABAABAAAAAQAAAABAAAIAAAABAIAAAAEQAAAAAAA=</HashCode>
       <FileName>Controllers\AccountController.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ResetPasswordModel" />
-      <Property Name="LoginModel" />
-      <Property Name="EmailService" />
-      <Property Name="User" />
-      <Property Name="ForgotPasswordModel" />
-      <Property Name="RegisterModel" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.MainController">
     <Position X="9" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAQAAAACAAAAAAAAAAAAAAAAAAAAAQAAAAAAE=</HashCode>
+      <HashCode>AAAABAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Controllers\MainController.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="CommunityPlayer" />
-      <Property Name="DotaProfileInfo" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.RoleController">
     <Position X="16.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACABAAAAAAAAAAAAAAAECAgAAEAAEACAAAAAAABAAA=</HashCode>
+      <HashCode>AACABAAAAAAAAAAAAAAAACAgAAEAAEACAAAAAAAAAAA=</HashCode>
       <FileName>Controllers\RoleController.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="CreateRoleModel" />
-      <Property Name="ChangeRoleModel" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.TeamsController">
     <Position X="12.75" Y="4" Width="1.5" />
-    <AssociationLine Name="GetTeamInfo" Type="KursachV2.Services.TeamsService.GetTeamInfo">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.484" Y="-1.471" />
-      </MemberNameLabel>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAEIAAAAABEAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAIAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Controllers\TeamsController.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Team" />
-      <Property Name="GetTeamInfo" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.TournamentsController">
     <Position X="18" Y="3.75" Width="1.5" />
@@ -92,25 +53,16 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>CgAAAAAAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Controllers\TournamentsController.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Tournament" />
-      <Property Name="GetTourInfo" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Controllers.UsersController">
     <Position X="10.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACABAAAAAAAgAAAAAAAAEAAAgEAAEACCAAAAAAAAAA=</HashCode>
+      <HashCode>AACABAAAAAAAgAAAAAAAAAAAAAEAAEACAAAAAAAAAAA=</HashCode>
       <FileName>Controllers\UsersController.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ChangePasswordModel" />
-      <Property Name="CreateModel" />
-      <Property Name="EditModel" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="KursachV2.Models.Players.CommunityPlayer">
     <Position X="9.25" Y="6.5" Width="1.5" />
@@ -195,12 +147,9 @@
   <Class Name="KursachV2.Services.PlayerService.DotaProfileInfo" BaseTypeListCollapsed="true">
     <Position X="7" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\PlayerService\DotaProfileInfo.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Stats" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="KursachV2.Services.TeamsService.GetTeamInfo" BaseTypeListCollapsed="true">
