@@ -161,7 +161,6 @@ C:\Users\adminvis\source\repos\KursachV2\KursachV2\obj\Debug\netcoreapp3.1\Razor
 C:\Users\adminvis\source\repos\KursachV2\KursachV2\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgotPasswordOK.cshtml.g.cs
 C:\Users\adminvis\source\repos\KursachV2\KursachV2\obj\Debug\netcoreapp3.1\Razor\Views\Tournaments\Tourinfo.cshtml.g.cs
 C:\Users\adminvis\source\repos\KursachV2\KursachV2\obj\Debug\netcoreapp3.1\Razor\Views\Account\Succsess.cshtml.g.cs
-C:\Users\adminvis\source\repos\KursachV2\KursachV2\obj\Debug\netcoreapp3.1\Razor\Views\Account\Error.cshtml.g.cs
 C:\Users\adminvis\source\repos\KursachV2\KursachV2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Hosting.WindowsServices.dll
 C:\Users\adminvis\source\repos\KursachV2\KursachV2\bin\Debug\netcoreapp3.1\System.ServiceProcess.ServiceController.dll
 C:\Users\adminvis\source\repos\KursachV2\KursachV2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll

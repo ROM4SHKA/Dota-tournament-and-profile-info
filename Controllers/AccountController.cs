@@ -267,6 +267,11 @@ namespace KursachV2.Controllers
             model.Danger = 2;
             return RedirectToAction("ResetPassword", "Account", model);
         }
+        [HttpGet]
+        public IActionResult Succsess()
+        {
+            return View();
+        }
     }
 }
    

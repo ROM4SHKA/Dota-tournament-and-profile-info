@@ -3,10 +3,14 @@
     ViewData["Title"] = Model.Name;
 }
 
-<h1>TeamInfo</h1>
-
-<img src="@Model.ImgUrl" width="400" />
-<p>@Model.Name</p>
+<table>
+    <tr>
+    <td>
+        <img src="@Model.ImgUrl" width="200" />
+    </td>
+        <td><h3>@Model.Name</h3></td>
+        </tr>
+</table>
 @if (Model.Location != null)
 {
     <p>Країна: @Model.Location </p>

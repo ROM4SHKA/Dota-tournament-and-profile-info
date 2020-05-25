@@ -129,7 +129,7 @@ namespace KursachV2.Controllers
         public async Task<IActionResult> Delete (string id)
         {
             User user = await _userManager.FindByIdAsync(id);
-            if(user!= null&& await _userManager.IsInRoleAsync(user,"admin"))
+            if(user!= null)
             {
                 IdentityResult result = await _userManager.DeleteAsync(user);
             }

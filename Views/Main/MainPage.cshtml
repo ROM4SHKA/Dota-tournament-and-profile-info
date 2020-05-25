@@ -5,7 +5,12 @@
 <div>
 <table>
     <tr>
-        <td><img src="@Model.profile.ImageURL" width="150"/></td>
+        <td>@if (Model.profile.ImageURL != null)
+        {
+            <img src="@Model.profile.ImageURL" width="150"/>
+        }
+        @if(Model.profile.ImageURL == null){<img src="~/wwwroot/css/img/images.jpg" width="150"/>}
+        </td>
         <td id="nick"><a href="@Model.profile.ProfileURL">@Model.profile.NickName</a></td>
     </tr>
 </table>
